@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { logo } from "../utils/constants";
 import SearchBar from "./SearchBar";
@@ -17,6 +17,16 @@ const Navbar = () => (
   >
     <Link to={"/"} style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
+      <Typography
+        variant="h1"
+        color="#fff"
+        fontSize={25}
+        fontFamily={"sans-serif"}
+        fontWeight="bold"
+        sx={{ marginLeft: 3 }}
+      >
+        MueTube
+      </Typography>
     </Link>
     <SearchBar />
   </Stack>
